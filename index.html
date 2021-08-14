@@ -82,7 +82,8 @@
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h1 class="text-main">$1200</h1>
-                                <div class="btn panda-btn-main text-white">Buy Now</div>
+                                <button onclick="clicked()" id="panda-btn-one" class="btn panda-btn-main text-white">Buy
+                                    Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -121,7 +122,7 @@
     <main>
         <!-- categories section start -->
         <section class="container my-5">
-            <h1 class="mb-4">Categories</h1>
+            <h1 id="categories-section" class="mb-4">Categories</h1>
             <div class="container px-4">
                 <div class="row g-5">
                     <div class="col-lg-4 col-md-6 col-12">
@@ -149,42 +150,48 @@
 
         <!-- shoes item section start -->
         <section class="container my-5">
-            <h1 class="mb-4">Shoes</h1>
+            <h1 id="shoes-section" class="mb-4 h1-tag">Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col-12 col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                    <div id="card-one" class="card h-100 border-0 shadow">
+                        <img onmouseover="setNewImageOne()" onmouseout="setOldImageOne()" id="change-image-one"
+                            src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to
                                 additional.</p>
                             <h5>$120</h5>
-                            <a href="#" class="btn panda-btn-main text-white">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-one" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                    <div id="card-two" class="card h-100 border-0 shadow">
+                        <img onmouseover="setNewImageTwo()" onmouseout="setOldImageTwo()" id="change-image-two"
+                            src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                             <h5>$320</h5>
-                            <a href="#" class="btn panda-btn-main text-white">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-one" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow">
-                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                    <div id="card-three" class="card h-100 border-0 shadow">
+                        <img onmouseover="setNewImageThree()" onmouseout="setOldImageThree()" id="change-image-three"
+                            src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional.</p>
                             <h5>$350</h5>
-                            <a href="#" class="btn panda-btn-main text-white">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-one" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -193,18 +200,20 @@
         <!-- shoes item section end -->
 
         <!-- bagpack item section start -->
-        <section class="container my-5">
-            <h1 class="mb-4">BagPack</h1>
+        <section id="bagpack" class="container my-5 p-5">
+            <h1 id="bagpack-section" class="mb-4 h1-tag">BagPack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col-12 col-lg-4 col-md-6">
                     <div class="card h-100 border-0 shadow">
-                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <img onclick="changeImage()" id="change-img-one" src="images/bags/bag-1.png"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
                             <h5>$120</h5>
-                            <a href="#" class="btn panda-btn-main text-white">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-one" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -216,7 +225,8 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                             <h5>$320</h5>
-                            <a href="#" class="btn panda-btn-main">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-two" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -229,7 +239,8 @@
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</p>
                             <h5>$169</h5>
-                            <a href="#" class="btn panda-btn-main text-white">Buy Now</a>
+                            <button onclick="clicked()" id="panda-btn-three" class="btn panda-btn-main text-white">Buy
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -238,16 +249,17 @@
         <!-- bagpack item section end -->
 
         <!-- subscribe section start -->
-        <section class="container panda-bg-main d-flex justify-content-center my-5 p-5 border-3 rounded">
+        <section ondblclick="bgColorChange()" id="subscribe-container"
+            class="container panda-bg-main d-flex justify-content-center my-5 p-5 border-3 rounded">
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="input-text" placeholder="name@example.com">
                     <label for="floatingInput">Email address</label>
                 </div>
                 <br>
-                <a href="#" class="btn panda-btn-main text-white">SUBMIT</a>
+                <button id="submit-btn" class="btn panda-btn-main text-white" disabled>SUBMIT</button>
             </div>
         </section>
         <!-- subscribe section end -->
@@ -265,6 +277,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
